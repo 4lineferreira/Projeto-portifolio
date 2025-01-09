@@ -1,103 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Projeto Portfólio">
+		<meta name="author" content="Generation Brasil">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		
+		<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projeto Portfólio" />
-    <meta name="author" content="Aline Ferreira" />
-    <meta name="keywords" content="HTLM, CSS, JavaScript" />
-    <link rel="icon" type="image/svg" href="assets/img/Captura_de_tela_2025-01-06_194520-removebg-preview.png" />
-    <title>Formulário </title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
-<body>
-    <header>
-        <h1>Contato</h1>
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+		<title>Contato - Portfólio</title>
+	</head>
+	<body>
+		<header>
+			<div id="header_content" class="flex">
+				<div id="titulo">
+					<h1>Entre em contato comigo!</h1>
+				</div>
 
-    <main>
-        <h2>Formulário de Contato</h2>
-        <section id="contact">
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Informações Pessoais</legend>
-                    <label for="nome">Nome:</label>
-                    <input id="nome" type="text" name="name" placeholder="Digite seu nome" required />
-                    <span id="txtNome"></span>
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" name="email" placeholder="Digite seu email" required />
-                    <span id="txtEmail"></span>
-                </fieldset>
-                <fieldset>
-                    <legend>Mensagem</legend>
-                    <label for="subject">Assunto:</label>
-                    <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
-                    <span id="txtSubject"></span>
-                    <label for="message">Mensagem:</label>
-                    <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
-                </fieldset>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+				<div id="menu">
+					<nav>
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-        <article id="mapa">
+		<main>
+			<div id="contact" class="flex">
+				<form action="#" method="submit">
+					<label for="nome">Nome: </label>
+					<input
+						id="nome"
+						type="text"
+						name="name"
+						placeholder="Digite seu nome"
+					/>
+					<span id="txtNome"></span>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5007271419986!2d-46.63648612397662!3d-23.5504532788074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa560e8691%3A0x7c2c9afc207da0a2!2sMarco%20Zero%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1736208948724!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<label for="email">Email: </label>
+					<input
+						id="email"
+						type="email"
+						name="email"
+						placeholder="Digite seu email"
+					/>
+					<span id="txtEmail"></span>
 
-        </article>
-    </main>
+					<label for="subject">Assunto: </label>
+					<input
+						id="subject"
+						type="text"
+						name="subject"
+						placeholder="Digite o título da mensagem"
+					/>
+					<span id="txtSubject"></span>
 
-    <footer>
-        <section id="redes_sociais">
+					<label for="message">Mensagem: </label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Digite sua mensagem"
+					></textarea>
 
-            <a href="https://github.com/4lineferreira"> 
-                <img 
-                    src="assets/img/github.png" 
-                    alt="Github" 
-                    width="20" 
-                    height="20">
-            </a>
+					<button type="submit">Enviar</button>
+				</form>
 
-            <a href=""> 
-                <img 
-                    src="assets/img/instagram.png" 
-                    alt="Instagram" 
-                    width="20" 
-                    height="20">
-        </a>
+                <section id="mapa" class="flex_start">
+					
+					<div id="endereco">
+						<p>Praça da Sé, 68 - São Paulo - SP</p>
+						<p>Marco zero de São Paulo</p>
+                        
+					</div>
 
-            <a href="https://www.linkedin.com/in/alineapferreiras/"> 
-                <img 
-                    src="assets/img/linkedin.png" 
-                    alt="LinkedIn" 
-                    width="20" 
-                    height="20">
-            </a>
+					<iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5007271420013!2d-46.63648612467021!3d-23.550453278807304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa560e8691%3A0x7c2c9afc207da0a2!2sMarco%20Zero%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1736458767600!5m2!1spt-BR!2sbr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+				</section>
+			</div>
+		</main>
 
-            <a href="https://www.tiktok.com/@itsnotina_._"> 
-                <img 
-                    src="assets/img/tik-tok.png" 
-                    alt="Tiktok" 
-                    width="20" 
-                    height="20">
-            </a>
+		<footer class="flex">
 
-        </section>
+            <section id="redes_sociais">
+				<a href="">
+					<img src="assets/img/linkedin.png" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/github.png" alt="Github" class="social_icon"/>
+				</a>
+				
+			</section>
 
-        <h3>Feito com 💕por Aline Ferreira  - 2025</h3>
+			<h3>Feito com 💕 por Aline Ferreira - 2025</h3>
 
-    </footer>
-</body>
+		</footer>
 
+		<script src="assets/js/script.js"></script>
+
+	</body>
 </html>
