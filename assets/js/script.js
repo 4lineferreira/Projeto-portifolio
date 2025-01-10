@@ -4,7 +4,7 @@ formulario.addEventListener('submit', function(event) {
   
     event.preventDefault();
   
-    const campoNome = document.querySelector('#name');
+    const campoNome = document.querySelector('#nome');
     const txtNome = document.querySelector('#txtNome');
   
     if (campoNome.value.length < 3) {
@@ -41,9 +41,9 @@ formulario.addEventListener('submit', function(event) {
 
     window.alert("Formulário Enviado com Sucesso!");
   
-    campoNome.value = ''
-    campoEmail.value = ''
-    campoSubject.value = ''
-    campoMessage.value = ''
+    campoNome.value = '';
+    campoEmail.value = '';
+    campoSubject.value = '';
+    campoMessage.value = '';
 
   });

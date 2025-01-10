@@ -183,6 +183,12 @@ flex-direction: row;
 gap: 2rem;
 }
 
+.footer-contato{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 form {
 display: flex;
 flex-direction: column;
